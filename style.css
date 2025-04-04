@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background: #0a0a23;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(45deg, #1e90ff, #ff00ff);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem 2rem;
+    background: radial-gradient(circle, #1e1e3f, #0a0a23);
+}
+
+.video-container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+}
+
+.video-info h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+.video-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(45deg, #ff00ff, #1e90ff);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+.trending {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.trending h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.video-card h3 {
+    margin: 0.5rem 0;
+    color: #00ffcc;
+}
+
+footer {
+    background: linear-gradient(45deg, #1e90ff, #ff00ff);
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsif untuk smartphone */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Bisa ditambahkan hamburger menu */
+    }
+    .video-container iframe {
+        height: 200px;
+    }
+    .video-info h2 {
+        font-size: 1.5rem;
+    }
+    .download-btn {
+        padding: 0.6rem 1.5rem;
+    }
+}
